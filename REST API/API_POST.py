@@ -8,8 +8,8 @@ def main():
     url = "https://api.github.com/user/repos"  #### the link where I would create a new repo
     github_pat_token = os.getenv("github_pat_token")
     data = {
-        "name" : "Repo-made-with-POST",
-        "private" : True
+        "name" : "Repo-made-with-POST-notPvt",
+        # "private" : True
     }
     ### Now the reverse, this python object "data" needs to be in the form of JSON to POST in Github
     headers = {
