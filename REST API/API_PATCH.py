@@ -17,8 +17,7 @@ def main():
         "User-Agent": "PythonApp"
     }
     
-    response = requests.put(url, json = data, headers=headers)
-    ##### For PUT I must send all the information
+    response = requests.patch(url, json = data, headers=headers)
     if response.status_code == 200:
         print(response.json()) #converting the response into <'dict'>
     else:
